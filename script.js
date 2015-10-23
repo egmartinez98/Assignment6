@@ -432,7 +432,7 @@ console.log(reverse);
 
     
 
-document.getElementById("btn2").addEventListener("click", cardValidation, false)
+document.getElementById("sub2").addEventListener("click", cardValidation, false)
 
 
 
