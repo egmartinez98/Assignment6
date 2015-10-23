@@ -1,0 +1,25 @@
+img {
+    max-width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#fname# {
+    color: red;
+}
+
+#r {
+    float: right;
+    position: fixed;
+    right: -8px;
+}
+
+#invalid {
+    color: red;
+}

@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-3.3.5-dist/css/jumbotron-narrow.css" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        
+        <div class="row">
+            <h3 class="text-muted col-sm-8">Project name</h3>
+            <form class="form-inline col-sm-4" id="r">
+              
+               
+               <p id="amount" class="btn btn-primary">Total: ($00.00)</p>
+        </div>
+</form>
+      </div>
+
+      <div class="jumbotron">
+            <img src="http://www.digiorno.com/Content/Images/search-results/header.jpg" alt="">
+      </div>
+<form id="form">
+   <fieldset>
+    <legend>Delivery Location
+</legend>
+  <div class="form-group">
+    <label for="fname">First Name</label>
+    <input type="text" class="form-control fname" placeholder="Whats your name?">
+  </div>
+  
+  
+  <div class="form-group">
+   <h5><strong>Address Type</strong></h5>
+    <select id="add1">
+        <option value="house" id="house">House</option>
+        <option value="apartment" id="apt">Apartment</option>
+        <option value="business" id="bus">Business</option>
+        <option value="campus" id="campus">Campus</option>
+        <option value="hotel" id="hotel">Hotel</option>
+        <option value="dorm" id="dorm">Dorm</option>
+        <option value="other" id="other">Other</option>
+    </select>
+  </div>
+  <div class="form-group hidden" id="hidden">
+    <label for="other">Other Address</label>
+    <input type="text" class="form-control" id="other" placeholder="Whats your address?">
+  </div>
+  
+  <div class="form-group">
+    <label for="street">Street Address</label>
+    <input type="text" class="form-control street" placeholder="Whats your address?">
+  </div>
+  <div class="form-group">
+    <label for="option">Optional Apartment Number</label>
+    <input type="text" class="form-control" id="option" placeholder="Whats your address?">
+  </div>
+  
+   <div class="form-group">
+    <label for="city">City</label>
+    <input type="text" class="form-control city" id="city" placeholder="What's your city's name?">
+  </div>
+  <div class="form-group">
+    <label for="state">State</label>
+    <input type="text" class="form-control state" id="state" placeholder="Example: CA">
+  </div>
+  <div class="form-group">
+    <label for="zip">Zip Code</label>
+    <input type="text" class="form-control zip" id="zip" placeholder="Example: 92173">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="text" class="form-control phone" id="phone" placeholder="Example: (209)- 204-9991">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control email" id="email" placeholder="Example: Pepperoni_Pizza@gmail.com">
+  </div>
+  </fieldset>
+  <!--<button type="submit" class="btn btn-primary" id="sub" onclick="return false">Submit</button>-->
+</form>
+   
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+           <form  id="ray">
+         
+         <legend>Build Your Order</legend>
+             <h4>Dough:</h4>
+             
+<div>
+     <div class="radio">
+      <label>
+        <input type="radio" name="rad" id="hand" value="Hand Tossed">Hand Tossed
+      </label>
+    </div>
+    
+     <div class="radio">
+      <label>
+        <input type="radio" name="rad" id="thin" value="Thin Crust">Thin Crust
+      </label>
+    </div>
+       
+     <div class="radio">
+      <label>
+        <input type="radio" name="rad" id="new" value="New York Style">New York Style
+      </label>
+    </div> 
+     
+    <div class="radio">
+      <label>
+        <input type="radio" name="rad" id="Gluten" value="Gluten Free">Gluten Free
+      </label>
+    </div> </div>       
+    
+    <div class="form-group hidden"  id="size">
+   <h5><strong>Pizza Size</strong></h5>
+    
+       
+    <select id="sel">
+        
+    </select>
+  </div>
+        <fieldset id="d" disabled>
+        <div class="form-group">
+           <h5><strong>Cheese</strong></h5>
+                <select id="cheese">
+                    <option>Normal: No Charge</option>
+                    <option>Light: No Charge</option>
+                    <option id="extra" value="2.99">Extra: +$2.99</option>
+                    <option id="double" value="3.99">Double: +$3.99</option>
+                </select>
+        </div>
+         
+         <div class="form-group">
+           <h5><strong>Sauce</strong></h5>
+                <select>
+                    <option>Regular Tomato: No Charge</option>
+                    <option>Hearty Tomato: +$.99</option>
+                    <option>BBQ Sauce: +$1.99</option>
+                </select>
+        </div>
+        
+           
+           <div class="checkbox">
+            <h5><strong>Toppings $.99e/a</strong></h5>
+            <label>
+                <input type="checkbox">Pepperoni</input><br>
+                <input type="checkbox">Sausag</input><br>
+                <input type="checkbox">Ham</input><br>
+                <input type="checkbox">Bacon</input><br>
+                <input type="checkbox">Salami</input><br>
+                <input type="checkbox">Peppers</input><br>
+                <input type="checkbox">Olives</input><br>
+                <input type="checkbox">Jalapenos</input><br>
+                <input type="checkbox">Mushroom</input><br>
+                <input type="checkbox">Pineapple</input><br>
+                <input type="checkbox">Onion</input>
+            </label>
+        </div>
+         
+         
+         
+         
+         </fieldset>
+     <button type="submit" class="btn btn-primary" id="finished" onclick="return false">Finished Building Pizza</button>
+     </form>   
+       
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       
+       <form id="bill" class="hidden">
+   <fieldset>
+    <legend>Billing Information
+</legend>
+    
+    <div class="checkbox">
+        <label>
+          <input type="checkbox" id="billing"> Same as delivery information
+        </label>
+  </div>
+  
+   <div class="form-group">
+    <label for="fname">First Name</label>
+    <input type="text" class="form-control fname" id="fname" placeholder="Whats your name?">
+  </div>
+  
+  
+  <div class="form-group">
+   <h5><strong>Address Type</strong></h5>
+    <select id="add1">
+        <option value="house" id="house">House</option>
+        <option value="apartment" id="apt">Apartment</option>
+        <option value="business" id="bus">Business</option>
+        <option value="campus" id="campus">Campus</option>
+        <option value="hotel" id="hotel">Hotel</option>
+        <option value="dorm" id="dorm">Dorm</option>
+        <option value="other" id="other">Other</option>
+    </select>
+  </div>
+  <div class="form-group hidden" id="hidden">
+    <label for="other">Other Address</label>
+    <input type="text" class="form-control other" id="other" placeholder="Whats your address?">
+  </div>
+  
+  <div class="form-group">
+    <label for="street">Street Address</label>
+    <input type="text" class="form-control street" id="street" placeholder="Whats your address?">
+  </div>
+  <div class="form-group">
+    <label for="option">Optional Apartment Number</label>
+    <input type="text" class="form-control option" id="option" placeholder="Whats your address?">
+  </div>
+  
+   <div class="form-group">
+    <label for="city">City</label>
+    <input type="text" class="form-control city" id="city" placeholder="What's your city's name?">
+  </div>
+  <div class="form-group">
+    <label for="state">State</label>
+    <input type="text" class="form-control state" id="state" placeholder="Example: CA">
+  </div>
+  <div class="form-group">
+    <label for="zip">Zip Code</label>
+    <input type="text" class="form-control zip" id="zip" placeholder="Example: 92173">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="text" class="form-control phone" id="phone" placeholder="Example: (209)- 204-9991">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control email" id="email" placeholder="Example: Pepperoni_Pizza@gmail.com">
+  </div>
+  
+  <div class="form-group">
+    <label for="card">Credit Card Number</label><div id="invalid"></div>
+    <input type="text" class="form-control" id="card">
+  </div>
+  
+  <div class="form-group">
+    <label for="cvc">CVC</label>
+    <input type="text" class="form-control" id="cvc">
+  </div>
+  
+       <div class="form-group">
+   <h5><strong>Experation Date</strong></h5>
+    
+    
+    <select name="year" id="year">
+       <option value="select" id="select2">Select a Year</option>
+        <option value="2015" id="2015">2015</option>
+        <option value="2016" id="2016">2016</option>
+        <option value="2017" id="2017">2017</option>
+        <option value="2018" id="2018">2018</option>
+        <option value="2019" id="2019">2019</option>
+        <option value="2020" id="2020">2020</option>
+        <option value="2021" id="2021">2021</option>
+        <option value="2022" id="2022">2022</option>
+        <option value="2023" id="2023">2023</option>
+        <option value="2024" id="2024">2024</option>
+        <option value="2025" id="2025">2025</option>
+        
+    </select>
+    
+    <select name="month" id="month">
+        <option value="select" id="select">Select an month</option>
+        <option value="0" id="jan">Jan</option>
+        <option value="1" id="feb">Feb</option>
+        <option value="2" id="mar">Mar</option>
+        <option value="3" id="apirl">Apirl</option>
+        <option value="4" id="may">May</option>
+        <option value="5" id="june">June</option>
+        <option value="6" id="july">July</option>
+        <option value="7" id="aug">Aug</option>
+        <option value="8" id="sep">Sep</option>
+        <option value="9" id="oct">Oct</option>
+        <option value="10" id="nov">Nov</option>
+        <option value="11" id="dec">Dec</option>
+        
+    </select>
+  </div>
+  
+  
+  
+  </fieldset>
+  
+  
+  
+  
+  <button type="submit" class="btn btn-primary" id="sub2" onclick="return false">Submit</button>
+
+</form>
+       
+    
+       
+       
+       
+       
+       
+       <footer class="footer">
+        <p>&copy; Company 2014</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="script.js"></script>
+    
+  </body>
+</html>
